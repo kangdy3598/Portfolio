@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{4C2698B0-1E73-41BC-B7A9-03D37F652637}</ProjectGuid>
+    <RootNamespace>MapleStory</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..;C:\Program Files %28x86%29\Windows Kits\10\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\Header\Lib;C:\Program Files %28x86%29\Windows Kits\10\Lib;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)$(ProjectName)</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+    <EmbedManifest>true</EmbedManifest>
+    <LibraryPath>..\Header\Lib;C:\Program Files %28x86%29\Windows Kits\10\Lib</LibraryPath>
+    <IncludePath>..;C:\Program Files %28x86%29\Windows Kits\10\Include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>fmodex64_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\Header\Inc;./;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalOptions>/Ylsymbol %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>DirectXTK64d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\Header\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\Header\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <AdditionalOptions>/Ylsymbol %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\Header\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>DirectXTK.lib;DirectXTK64.lib;DirectXTK64d.lib;DirectXTKd.lib;fmodex64_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Class\CameraClass.h" />
+    <ClInclude Include="..\Class\D3DClass.h" />
+    <ClInclude Include="..\Class\SoundManager.h" />
+    <ClInclude Include="..\Class\SystemClass.h" />
+    <ClInclude Include="..\Class\TimeClass.h" />
+    <ClInclude Include="..\Graphics\Background.h" />
+    <ClInclude Include="..\Graphics\DDSTextureLoader.h" />
+    <ClInclude Include="..\Graphics\GraphicsClass.h" />
+    <ClInclude Include="..\Graphics\LineShaderClass.h" />
+    <ClInclude Include="..\Graphics\TextureClass.h" />
+    <ClInclude Include="..\Graphics\TextureShaderClass.h" />
+    <ClInclude Include="..\Graphics\UI\DeathCountUI.h" />
+    <ClInclude Include="..\Graphics\UI\EnemyHP.h" />
+    <ClInclude Include="..\Graphics\UI\KeyConfig.h" />
+    <ClInclude Include="..\Graphics\UI\Notice.h" />
+    <ClInclude Include="..\Graphics\UI\PlayerHP.h" />
+    <ClInclude Include="..\Graphics\UI\ResurrectionUI.h" />
+    <ClInclude Include="..\Graphics\UI\UI.h" />
+    <ClInclude Include="..\Header\AlignedAllocationPolicy.h" />
+    <ClInclude Include="..\Header\DxDefine.h" />
+    <ClInclude Include="..\Header\SpriteBatch.h" />
+    <ClInclude Include="..\Header\SpriteFont.h" />
+    <ClInclude Include="..\Header\stdafx.h" />
+    <ClInclude Include="..\Header\targetver.h" />
+    <ClInclude Include="..\Input\InputClass.h" />
+    <ClInclude Include="..\Unit\Collision.h" />
+    <ClInclude Include="..\Unit\Damage.h" />
+    <ClInclude Include="..\Unit\Enemy\EnemyTailClass.h" />
+    <ClInclude Include="..\Unit\Enemy\EnemyPoison.h" />
+    <ClInclude Include="..\Unit\Enemy\EnemyClass.h" />
+    <ClInclude Include="..\Unit\Enemy\EnemyFire.h" />
+    <ClInclude Include="..\Unit\Enemy\EnemyObstacle.h" />
+    <ClInclude Include="..\Unit\Enemy\EnemyState.h" />
+    <ClInclude Include="..\Unit\FSM\State.h" />
+    <ClInclude Include="..\Unit\Object.h" />
+    <ClInclude Include="..\Unit\ObjectPool.h" />
+    <ClInclude Include="..\Unit\Player\PlayerClass.h" />
+    <ClInclude Include="..\Unit\Player\SkillEffect.h" />
+    <ClInclude Include="..\Unit\Player\Skill_Swift.h" />
+    <ClInclude Include="..\Unit\Player\Skill_Ultimate.h" />
+    <ClInclude Include="..\Unit\Player\PlayerState.h" />
+    <ClInclude Include="..\Unit\PoolList.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Class\CameraClass.cpp" />
+    <ClCompile Include="..\Class\D3DClass.cpp" />
+    <ClCompile Include="..\Class\SoundManager.cpp" />
+    <ClCompile Include="..\Class\SystemClass.cpp" />
+    <ClCompile Include="..\Class\TimeClass.cpp" />
+    <ClCompile Include="..\Graphics\Background.cpp" />
+    <ClCompile Include="..\Graphics\DDSTextureLoader.cpp" />
+    <ClCompile Include="..\Graphics\GraphicsClass.cpp" />
+    <ClCompile Include="..\Graphics\LineShaderClass.cpp" />
+    <ClCompile Include="..\Graphics\TextureClass.cpp" />
+    <ClCompile Include="..\Graphics\TextureShaderClass.cpp" />
+    <ClCompile Include="..\Graphics\UI\DeathCountUI.cpp" />
+    <ClCompile Include="..\Graphics\UI\EnemyHP.cpp" />
+    <ClCompile Include="..\Graphics\UI\KeyConfig.cpp" />
+    <ClCompile Include="..\Graphics\UI\Notice.cpp" />
+    <ClCompile Include="..\Graphics\UI\PlayerHP.cpp" />
+    <ClCompile Include="..\Graphics\UI\ResurrectionUI.cpp" />
+    <ClCompile Include="..\Graphics\UI\UI.cpp" />
+    <ClCompile Include="..\Input\InputClass.cpp" />
+    <ClCompile Include="..\Main.cpp" />
+    <ClCompile Include="..\Unit\Collision.cpp" />
+    <ClCompile Include="..\Unit\Damage.cpp" />
+    <ClCompile Include="..\Unit\Enemy\EnemyState_Die.cpp" />
+    <ClCompile Include="..\Unit\Enemy\EnemyTailClass.cpp" />
+    <ClCompile Include="..\Unit\Enemy\EnemyPoison.cpp" />
+    <ClCompile Include="..\Unit\Enemy\EnemyClass.cpp" />
+    <ClCompile Include="..\Unit\Enemy\EnemyFire.cpp" />
+    <ClCompile Include="..\Unit\Enemy\EnemyObstacle.cpp" />
+    <ClCompile Include="..\Unit\Enemy\EnemyState_Skill_2.cpp" />
+    <ClCompile Include="..\Unit\Enemy\EnemyState_Skill_3.cpp" />
+    <ClCompile Include="..\Unit\Enemy\EnemyState_Skill_4.cpp" />
+    <ClCompile Include="..\Unit\Enemy\EnemyState_Skill_5.cpp" />
+    <ClCompile Include="..\Unit\Enemy\EnemyState_Skill_6.cpp" />
+    <ClCompile Include="..\Unit\Enemy\EnemyState_Summon.cpp" />
+    <ClCompile Include="..\Unit\Enemy\EnemyState_Move.cpp" />
+    <ClCompile Include="..\Unit\Enemy\EnemyState_Skill_1.cpp" />
+    <ClCompile Include="..\Unit\Object.cpp" />
+    <ClCompile Include="..\Unit\ObjectPool.cpp" />
+    <ClCompile Include="..\Unit\Player\PlayerClass.cpp" />
+    <ClCompile Include="..\Unit\Player\PlayerState_Die.cpp" />
+    <ClCompile Include="..\Unit\Player\SkillEffect.cpp" />
+    <ClCompile Include="..\Unit\Player\Skill_Swift.cpp" />
+    <ClCompile Include="..\Unit\Player\Skill_Ultimate.cpp" />
+    <ClCompile Include="..\Unit\Player\PlayerState_Idle.cpp" />
+    <ClCompile Include="..\Unit\Player\PlayerState_Jump.cpp" />
+    <ClCompile Include="..\Unit\Player\PlayerState_Skill_Ultimate.cpp" />
+    <ClCompile Include="..\Unit\Player\PlayerState_Walk.cpp" />
+    <ClCompile Include="..\Unit\PoolList.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

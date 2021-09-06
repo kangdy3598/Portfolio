@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\Unit">
+      <UniqueIdentifier>{11767db8-0ee8-48fe-8e3e-5f0b6ae7ad81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Unit\Player">
+      <UniqueIdentifier>{3500473e-e2b0-4a6c-86ba-cb06b7aa187b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Unit\Enemy">
+      <UniqueIdentifier>{f7bc2832-80be-4e53-a7c8-9b62c0b2fc00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Unit\_FSM">
+      <UniqueIdentifier>{0758099e-1043-4cd8-b83e-4ca95c62f8b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Unit\Damage">
+      <UniqueIdentifier>{5051ea30-e8e8-4f07-a5a8-fe9ed11ea2fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Define">
+      <UniqueIdentifier>{dc13f0a0-efed-46d4-a06b-b690994cefc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\NewFilter1">
+      <UniqueIdentifier>{0835bc22-4fbe-42ee-9bf9-8211c646e7ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\UI">
+      <UniqueIdentifier>{844f9b78-0872-4c5c-97b7-c413e4d5e39c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Unit\Enemy\Vellum">
+      <UniqueIdentifier>{df6b1649-b116-4551-861f-e587c29eeed1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Unit\Enemy\MapObstacle">
+      <UniqueIdentifier>{8f5b1870-5293-4a6a-87d8-36c959a7695d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Unit\Enemy\Vellum\Etc">
+      <UniqueIdentifier>{862d094a-0bb1-4b4b-8aa3-c4bf86366ac6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Unit\Enemy\Vellum\Vellum%27sTail">
+      <UniqueIdentifier>{a06f7993-4a89-4f3f-8935-2a5059428d65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Unit\Player\Skills">
+      <UniqueIdentifier>{1d9f4bfa-0122-47a3-a16c-bbe0b2f7b163}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Unit\FSM\State.h">
+      <Filter>소스 파일\Unit\_FSM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Unit\Player\PlayerClass.h">
+      <Filter>소스 파일\Unit\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Unit\Player\PlayerState.h">
+      <Filter>소스 파일\Unit\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Unit\Damage.h">
+      <Filter>소스 파일\Unit\Damage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\AlignedAllocationPolicy.h">
+      <Filter>헤더 파일\Define</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\DxDefine.h">
+      <Filter>헤더 파일\Define</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>헤더 파일\Define</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\SpriteBatch.h">
+      <Filter>헤더 파일\Define</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\SpriteFont.h">
+      <Filter>헤더 파일\Define</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\stdafx.h">
+      <Filter>헤더 파일\Define</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\targetver.h">
+      <Filter>헤더 파일\Define</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Graphics\Background.h">
+      <Filter>헤더 파일\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Class\CameraClass.h">
+      <Filter>헤더 파일\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Unit\Collision.h">
+      <Filter>헤더 파일\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Class\D3DClass.h">
+      <Filter>헤더 파일\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Graphics\DDSTextureLoader.h">
+      <Filter>헤더 파일\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Graphics\GraphicsClass.h">
+      <Filter>헤더 파일\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Input\InputClass.h">
+      <Filter>헤더 파일\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Graphics\LineShaderClass.h">
+      <Filter>헤더 파일\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Class\SoundManager.h">
+      <Filter>헤더 파일\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Class\SystemClass.h">
+      <Filter>헤더 파일\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Graphics\TextureClass.h">
+      <Filter>헤더 파일\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Graphics\TextureShaderClass.h">
+      <Filter>헤더 파일\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Graphics\UI\PlayerHP.h">
+      <Filter>소스 파일\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Graphics\UI\EnemyHP.h">
+      <Filter>소스 파일\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Graphics\UI\KeyConfig.h">
+      <Filter>소스 파일\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Class\TimeClass.h">
+      <Filter>헤더 파일\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Graphics\UI\ResurrectionUI.h">
+      <Filter>소스 파일\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Graphics\UI\DeathCountUI.h">
+      <Filter>소스 파일\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Graphics\UI\Notice.h">
+      <Filter>소스 파일\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Unit\Object.h">
+      <Filter>소스 파일\Unit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Unit\Enemy\EnemyClass.h">
+      <Filter>소스 파일\Unit\Enemy\Vellum</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Unit\Enemy\EnemyObstacle.h">
+      <Filter>소스 파일\Unit\Enemy\MapObstacle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Unit\ObjectPool.h">
+      <Filter>소스 파일\Unit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Unit\PoolList.h">
+      <Filter>소스 파일\Unit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Unit\Enemy\EnemyTailClass.h">
+      <Filter>소스 파일\Unit\Enemy\Vellum\Vellum%27sTail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Unit\Enemy\EnemyState.h">
+      <Filter>소스 파일\Unit\Enemy\Vellum</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Unit\Enemy\EnemyPoison.h">
+      <Filter>소스 파일\Unit\Enemy\Vellum\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Unit\Enemy\EnemyFire.h">
+      <Filter>소스 파일\Unit\Enemy\Vellum\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Graphics\UI\UI.h">
+      <Filter>소스 파일\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Unit\Player\Skill_Ultimate.h">
+      <Filter>소스 파일\Unit\Player\Skills</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Unit\Player\SkillEffect.h">
+      <Filter>소스 파일\Unit\Player\Skills</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Unit\Player\Skill_Swift.h">
+      <Filter>소스 파일\Unit\Player\Skills</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Class\D3DClass.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Class\SystemClass.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Graphics\GraphicsClass.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Input\InputClass.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Class\CameraClass.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Graphics\TextureClass.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Graphics\TextureShaderClass.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Graphics\DDSTextureLoader.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Unit\Player\PlayerClass.cpp">
+      <Filter>소스 파일\Unit\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Class\SoundManager.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Graphics\LineShaderClass.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Unit\Collision.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Graphics\Background.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Unit\Damage.cpp">
+      <Filter>소스 파일\Unit\Damage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Graphics\UI\PlayerHP.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Graphics\UI\EnemyHP.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Class\TimeClass.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Graphics\UI\ResurrectionUI.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Graphics\UI\DeathCountUI.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Graphics\UI\KeyConfig.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Graphics\UI\Notice.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Unit\Object.cpp">
+      <Filter>소스 파일\Unit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Unit\Player\PlayerState_Idle.cpp">
+      <Filter>소스 파일\Unit\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Unit\Player\PlayerState_Walk.cpp">
+      <Filter>소스 파일\Unit\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Unit\Player\PlayerState_Jump.cpp">
+      <Filter>소스 파일\Unit\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Unit\Enemy\EnemyState_Summon.cpp">
+      <Filter>소스 파일\Unit\Enemy\Vellum</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Unit\Enemy\EnemyState_Skill_1.cpp">
+      <Filter>소스 파일\Unit\Enemy\Vellum</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Unit\Enemy\EnemyState_Move.cpp">
+      <Filter>소스 파일\Unit\Enemy\Vellum</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Unit\Enemy\EnemyClass.cpp">
+      <Filter>소스 파일\Unit\Enemy\Vellum</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Unit\Enemy\EnemyState_Skill_2.cpp">
+      <Filter>소스 파일\Unit\Enemy\Vellum</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Unit\Enemy\EnemyState_Skill_3.cpp">
+      <Filter>소스 파일\Unit\Enemy\Vellum</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Unit\Enemy\EnemyState_Skill_4.cpp">
+      <Filter>소스 파일\Unit\Enemy\Vellum</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Unit\Enemy\EnemyState_Skill_5.cpp">
+      <Filter>소스 파일\Unit\Enemy\Vellum</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Unit\Enemy\EnemyState_Skill_6.cpp">
+      <Filter>소스 파일\Unit\Enemy\Vellum</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Unit\Enemy\EnemyObstacle.cpp">
+      <Filter>소스 파일\Unit\Enemy\MapObstacle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Unit\ObjectPool.cpp">
+      <Filter>소스 파일\Unit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Unit\PoolList.cpp">
+      <Filter>소스 파일\Unit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Unit\Enemy\EnemyTailClass.cpp">
+      <Filter>소스 파일\Unit\Enemy\Vellum\Vellum%27sTail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Unit\Enemy\EnemyPoison.cpp">
+      <Filter>소스 파일\Unit\Enemy\Vellum\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Unit\Enemy\EnemyFire.cpp">
+      <Filter>소스 파일\Unit\Enemy\Vellum\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Graphics\UI\UI.cpp">
+      <Filter>소스 파일\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Unit\Player\Skill_Ultimate.cpp">
+      <Filter>소스 파일\Unit\Player\Skills</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Unit\Player\PlayerState_Skill_Ultimate.cpp">
+      <Filter>소스 파일\Unit\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Unit\Player\SkillEffect.cpp">
+      <Filter>소스 파일\Unit\Player\Skills</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Unit\Player\Skill_Swift.cpp">
+      <Filter>소스 파일\Unit\Player\Skills</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Unit\Player\PlayerState_Die.cpp">
+      <Filter>소스 파일\Unit\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Unit\Enemy\EnemyState_Die.cpp">
+      <Filter>소스 파일\Unit\Enemy\Vellum</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
